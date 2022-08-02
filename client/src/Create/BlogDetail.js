@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useHistory, useParams } from "react-router-dom";
 import useFetch from "../Fetch/usefetch";
 //GET method

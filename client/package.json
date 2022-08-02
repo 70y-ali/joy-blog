@@ -17,6 +17,7 @@
     "react-scripts": "5.0.1",
     "react-switch": "^7.0.0",
     "styled-components": "^5.3.5",
+    "tailwindcss": "^3.1.7",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -24,13 +25,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "precommit": "lint-staged"
-  },
-  "lint-staged": {
-    "src/**/*.{js, jsx, json, css}": [
-      "prettier --write",
-      "git add"
-    ]
+    "precommit": "pretty-quick --staged"
   },
   "eslintConfig": {
     "extends": [
@@ -52,6 +47,7 @@
   },
   "devDependencies": {
     "husky": "^8.0.1",
-    "lint-staged": "^13.0.3"
+    "lint-staged": "^13.0.3",
+    "pretty-quick": "^3.1.3"
   }
 }
