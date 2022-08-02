@@ -9,6 +9,7 @@ import BlogDetail from "./Create/BlogDetail";
 import NotFound from "./NotFound/NotFound";
 import Login from "./Sign-in/Login.js";
 import RegisterForm from "./RegisterForm/RegisterForm";
+import { ThemeContext } from "./Components/Contexts/ThemeContexts";
 //  App.js Root component
 // Navbar.js Main.js these are included into App.js
 function App() {
@@ -16,6 +17,7 @@ function App() {
     <Router>
       <div className="App">
         <Navbar />
+
         <div className="content">
           <Switch>
             <Route exact path={"/"}>
@@ -35,6 +37,9 @@ function App() {
             </Route>
             <Route path={"*"}>
               <NotFound />
+            </Route>
+            <Route exact path="/context">
+              <ThemeContext />
             </Route>
           </Switch>
         </div>

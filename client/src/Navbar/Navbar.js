@@ -21,6 +21,7 @@ const Navbar = () => {
       >
         New Blog
       </Link>
+      <Link to="/context">Using context api</Link>
       <Link to="/sign-in"> Login</Link>
     </nav>
   );
